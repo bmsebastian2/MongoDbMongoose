@@ -1,10 +1,11 @@
 require("dotenv").config();
 let mongoose = require("mongoose");
 
-let uri = process.env.MONGO_URI;
-
+// let uri = process.env.MONGO_URI;
+let uri2 =
+  "mongodb+srv://bmsebastian3:Ab15415958@clusterfreecodecamp.dxqev3v.mongodb.net/?retryWrites=true&w=majority";
 mongoose
-  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(uri2, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((e) => console.log("err:" + e));
 let Person;
 
